@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philipp Thiele - Android Apps & Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        main {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        /* App Grid */
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+
+        /* App Card */
+        .app-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 400px;
+            width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .app-icon {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .app-icon-placeholder {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: #3498db;
+        }
+
+        .app-content {
+            padding: 25px;
+        }
+
+        .app-content h3 {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin-bottom: 12px;
+        }
+
+        .app-content p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .app-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+            transform: scale(1.02);
+        }
+
+        .btn-secondary {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #1a252f;
+            transform: scale(1.02);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-content p {
+            margin: 8px 0;
+        }
+
+        .footer-content .copyright {
+            margin-top: 20px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header {
+                padding: 40px 0;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            main {
+                padding: 40px 0;
+            }
+
+            .section-title {
+                font-size: 1.4rem;
+            }
+
+            .app-grid {
+                grid-template-columns: 1fr;
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Philipp Thiele</h1>
+            <p>Android Apps & Development</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2 class="section-title">My Apps</h2>
+            <div class="app-grid">
+                <div class="app-card">
+                    <div class="app-icon">
+                        <div class="app-icon-placeholder">📱</div>
+                    </div>
+                    <div class="app-content">
+                        <h3>SSH ADB Telnet Remote</h3>
+                        <p>Connect to and manage your devices remotely via SSH, ADB, and Telnet. A powerful terminal client for Android with support for multiple protocols.</p>
+                        <div class="app-buttons">
+                            <a href="/SshAdbTelnetRemotePrivacyPolicy/" class="btn btn-primary">Learn More</a>
+                            <a href="https://play.google.com/store/apps/details?id=de.snakeapps.remotekeyboard" class="btn btn-secondary">Get it on Google Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>Contact: <a href="mailto:thieleapps@gmail.com">thieleapps@gmail.com</a></p>
+                <p class="copyright">&copy; 2025 Philipp Thiele. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
